@@ -1,1 +1,76 @@
+theme:
+  background-color: 240 21 15
+  contrast-multiplier: 1.2
+  primary-color: 217 92 83
+  positive-color: 115 54 76
+  negative-color: 347 70 65
+pages:
+  - name: Infra
+    columns:
+      - size: small
+        widgets:
+          - type: bookmarks
+            title: Services
+            groups:
+              - title: Core Services
+                links:
+                  - title: Proxmox
+                    url: https://192.168.1.102:8006
 
+                  - title: Home Assistant
+                    url: http://home.local
+
+                  - title: AdGuard
+                    url: http://adguard.local
+
+                  - title: Nginx
+                    url: http://192.168.1.70
+
+                  - title: WireGuard
+                    url: http://wireguard.local
+
+                  - title: Stremio Server
+                    url: http://192.168.1.141:11470
+
+          - type: monitor
+            title: MQ700
+            cache: 1m
+            sites:
+              - title: Home Assistant
+                url: http://192.168.1.227:8123
+
+              - title: AdGuard
+                url: http://192.168.1.69
+
+              - title: WireGuard
+                url: http://192.168.1.66:10086
+
+              - title: Nginx
+                url: http://192.168.1.70
+
+          - type: monitor
+            title: Aquario
+            cache: 1m
+            sites:
+              - title: Aquario
+                url: http://192.168.1.141
+
+              - title: Stremio Server
+                url: http://192.168.1.141:11470
+
+      - size: full
+        widgets:
+          - type: releases
+            cache: 1d
+            repositories:
+              - glanceapp/glance
+              - home-assistant/core
+              - adguardteam/adguardhome
+
+          - type: rss
+            title: Hackaday
+            limit: 5
+            collapse-after: 3
+            cache: 12h
+            feeds:
+              - url: https://hackaday.com/blog/feed/
