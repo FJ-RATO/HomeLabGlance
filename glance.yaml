@@ -69,12 +69,12 @@ pages:
           - type: group
             widgets:
               - type: rss
-                  title: News
-                  limit: 8
-                  collapse-after: 4
-                  cache: 3h
-                  feeds:
-                    - url: https://noticias.sapo.pt/rss/
+                title: News
+                limit: 8
+                collapse-after: 4
+                cache: 3h
+                feeds:
+                  - url: https://noticias.sapo.pt/rss/
               - type: rss
                 title: Tech
                 limit: 8
