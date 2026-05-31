@@ -61,12 +61,10 @@ pages:
 
       - size: full
         widgets:
-          - type: releases
-            cache: 1d
-            repositories:
-              - glanceapp/glance
-              - home-assistant/core
-              - adguardteam/adguardhome
+         - type: search
+            search-engine: duckduckgo
+            autofocus: true
+            new-tab: true
 
           - type: rss
             title: Hackaday
