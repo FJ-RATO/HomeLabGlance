@@ -4,6 +4,7 @@ theme:
   primary-color: 217 92 83
   positive-color: 115 54 76
   negative-color: 347 70 65
+
 pages:
   - name: Infra
     columns:
@@ -74,3 +75,14 @@ pages:
             cache: 12h
             feeds:
               - url: https://hackaday.com/blog/feed/
+
+      - size: small
+        widgets:
+          - type: clock
+            hour-format: 24h
+            timezones:
+              - timezone: Europe/Lisbon
+                label: Portugal
+
+              - timezone: Europe/Zurich
+                label: Switzerland
