@@ -66,13 +66,25 @@ pages:
             autofocus: true
             new-tab: true
 
-          - type: rss
-            title: Hackaday
-            limit: 5
-            collapse-after: 3
-            cache: 12h
-            feeds:
-              - url: https://hackaday.com/blog/feed/
+          - type: group
+            widgets:
+              - type: rss
+                  title: News
+                  limit: 8
+                  collapse-after: 4
+                  cache: 3h
+                  feeds:
+                    - url: https://noticias.sapo.pt/rss/
+              - type: rss
+                title: Tech
+                limit: 8
+                collapse-after: 4
+                cache: 3h
+                feeds:
+                  - url: https://pplware.sapo.pt/feed/
+                  - url: https://tek.sapo.pt/rss
+
+              
 
       - size: small
         widgets:
